@@ -1,0 +1,16 @@
+item1:
+name: mftoi
+return: int32t
+ret-called-by:
+param-type: float
+param-called-by:
+param-name: f
+comment: Converts float to 32-bit integer
+item2:
+name: mitof
+return: float
+ret-called-by:
+param-type: int32t
+param-called-by:
+param-name: i
+comment: Converts 32-bit integer to float

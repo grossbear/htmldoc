@@ -52,6 +52,7 @@ write_text_style () {
     write_text_line "color:#$fontColor;"
     move_backward_carriage
     write_text_line "}"
+
 }
 
 #create html file
