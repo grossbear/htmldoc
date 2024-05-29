@@ -25,6 +25,7 @@ write_paragraph_margin 2
 write_tag_close "style"
 
 write_tag_close "head"
+#html head section end
 
 #html body section
 write_tag_open "body"
