@@ -29,7 +29,7 @@ write_tag_close "head"
 
 #html body section
 write_tag_open "body"
-
+load_write_fun_decl "data/test.desc"
 write_tag_close "body"
 
 write_tag_close "html"

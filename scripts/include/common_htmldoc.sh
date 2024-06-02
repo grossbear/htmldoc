@@ -81,6 +81,8 @@ write_text_style () {
     write_text_line "}"
 }
 
+#load styles from desc file and write into html doc
+#param 1 - styles descriprion filename
 load_write_styles () {
     styles_filename=$1
 
@@ -99,6 +101,62 @@ write_paragraph_margin () {
     move_backward_carriage
     write_text_line "}"
 }
+
+#param 1 - text data
+#param 2 - style name
+write_style_text () {
+    echo "<span class=\"$2Text\">$1</span>" >> html_filename
+}
+
+#pars array and write function declaration in html doc
+#param 1 - array of parameters
+write_fun_decl () {
+    params_array=$1
+
+    code_style="code"
+    keywd_style="keyword"
+    
+    write_tag_open "p"
+
+    if [[ -v "params_array[name]" ]]; then
+        echo "name exists"
+        text=params_array[name]
+        write_style_text text code_style
+    fi
+
+    if [[ -v "params_array[return]" ]]; then
+        echo "return exists"
+        text=params_array[return]
+        write_text_style text keywd_style
+    fi
+
+    write_tag_close "p"
+}
+
+load_write_fun_decl () {
+    desc_filename=$1
+    item_str="item"
+
+    declare -A params_array
+    echo "$desc_filename"
+
+    size=${#params_array}
+    echo "$size"
+
+    while IFS=: read -r param value
+    do
+        if [[ "$param" == *"$item_str"* ]]; then
+            echo "match"
+        else
+            echo "param: $param, value: $value"
+        fi
+    done < "$desc_filename"
+
+        
+    write_fun_decl params_array
+
+}
+
 
 #fileName="primary.desc"
 #itemStr='item'
