@@ -104,8 +104,8 @@ write_paragraph_margin () {
 
 #param 1 - text data
 #param 2 - style name
-write_style_text () {
-    echo "<span class=\"$2Text\">$1</span>" >> html_filename
+write_text_span_class () {
+    echo "<span class=\"$2Text\">$1</span>" >> $html_filename
 }
 
 #pars array and write function declaration in html doc
@@ -120,14 +120,16 @@ write_fun_decl () {
 
     if [[ -v "params_array[name]" ]]; then
         echo "name exists"
-        text=params_array[name]
-        write_style_text text code_style
+        text=${params_array["name"]}
+        echo "text: $text"
+        write_text_span_class text code_style
     fi
 
     if [[ -v "params_array[return]" ]]; then
         echo "return exists"
-        text=params_array[return]
-        write_text_style text keywd_style
+        text=${params_array["return"]}
+        echo "text: $text"
+        write_text_span_class text keywd_style
     fi
 
     write_tag_close "p"
@@ -140,8 +142,6 @@ load_write_fun_decl () {
     declare -A params_array
     echo "$desc_filename"
 
-    size=${#params_array}
-    echo "$size"
 
     while IFS=: read -r param value
     do
@@ -149,10 +149,14 @@ load_write_fun_decl () {
             echo "match"
         else
             echo "param: $param, value: $value"
+            params_array+=([$param]=$value)
         fi
     done < "$desc_filename"
 
         
+    size=${#params_array}
+    echo "size: $size"
+    echo "${params_array[@]}"
     write_fun_decl params_array
 
 }
