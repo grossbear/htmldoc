@@ -65,7 +65,7 @@ write_text_line () {
 #param 2 - font family
 #param 3 - font size
 #param 4 - font color in hex
-write_text_style () {
+write_style_data () {
     style_name=".$1Text"
     font_family=$2
     font_size=$3
@@ -88,7 +88,7 @@ load_write_styles () {
 
     while IFS=: read -r style_name font_name font_size font_color
     do
-        write_text_style $style_name $font_name $font_size $font_color
+        write_style_data $style_name $font_name $font_size $font_color
 
     done < "$styles_filename"
 }
@@ -122,26 +122,24 @@ write_fun_decl () {
         echo "name exists"
         text=${params_array["name"]}
         echo "text: $text"
-        write_text_span_class text code_style
+        write_text_span_class $text $code_style
     fi
 
     if [[ -v "params_array[return]" ]]; then
         echo "return exists"
         text=${params_array["return"]}
         echo "text: $text"
-        write_text_span_class text keywd_style
+        write_text_span_class $text $keywd_style
     fi
 
     write_tag_close "p"
 }
 
-load_write_fun_decl () {
+load_write_source_data () {
     desc_filename=$1
     item_str="item"
 
     declare -A params_array
-    echo "$desc_filename"
-
 
     while IFS=: read -r param value
     do
@@ -154,7 +152,7 @@ load_write_fun_decl () {
     done < "$desc_filename"
 
         
-    size=${#params_array}
+    size=${#params_array[@]}
     echo "size: $size"
     echo "${params_array[@]}"
     write_fun_decl params_array
