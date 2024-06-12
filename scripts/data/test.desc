@@ -1,3 +1,5 @@
 item1:
-name: fun
-return:virtual_const_int32t
+type:fun-decl
+name:test_name
+output:virtual#float#*
+input:float#&#out,#const#float#&#mtx1,#const#tmatrix44#&#mtx2
