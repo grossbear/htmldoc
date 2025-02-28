@@ -79,12 +79,13 @@ mmtx33affine
 mmtx33mult
 mmtx33det
 mmtx33set
+mmtx33lerp
+mmtx33copy
 mmtx33ident
 mmtx33isident
 mmtx33decomp
 mmtx33inverse
-mmtx33scale
-mmtx33scaleinv
+mmtx33scaling
 mmtx33rotate
 mmtx33transp
 mmtx33transl
@@ -97,9 +98,9 @@ mmtx44det
 mmtx44ident
 mmtx44isident
 mmtx44set
+mmtx44copy
 mmtx44inverse
-mmtx44scale
-mmtx44scaleinv
+mmtx44scaling
 mmtx44rotatex
 mmtx44rotatey
 mmtx44rotatez
@@ -110,10 +111,28 @@ mmtx44shadow
 mmtx44persp
 mmtx44ortho
 mmtx44lookat
+mmtx44frustum
 
-mquat
+mquatdot
+mquatset
+mquatcopy
+mquatln
+mquatexp
+mquatconj
+mquatident
+mquatisident
+mquatinverse
+mquatnorm
+mquatlen
+mquatlen2
+mquatmult
+mquatbary
+mquatslerp
+mquatnlerp
+
 
 mplaneset
+mplanecopy
 mplanedot
 mplanepts
 mplanenorm
