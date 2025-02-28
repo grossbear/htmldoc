@@ -19,8 +19,8 @@ mvec2bary
 mvec2rotate
 mvec2transf
 mvec2transf3
-mvec2inv
-mvec2neg
+mvec2invert
+mvec2negate
 
 mvec3add
 mvec3sub
@@ -37,12 +37,12 @@ mvec3max
 mvec3min
 mvec3catmull
 mvec3bary
-mvec3trans
-mvec3trans3
+mvec3transf
+mvec3transf3
 mvec3proj
 mvec3unproj
-mvec3inv
-mvec3neg
+mvec3invert
+mvec3negate
 
 mvec4add
 mvec4sub
@@ -61,9 +61,9 @@ mvec4min
 mvec4hermite
 mvec4carmull
 mvec4bary
-mvec4trans
-mvec4inv
-mvec4neg
+mvec4transf
+mvec4invert
+mvec4negate
 
 mmtx33affine
 mmtx33mult
@@ -77,7 +77,7 @@ mmtx33scale
 mmtx33rotatex
 mmtx33rotatey
 mmtx33rotatez
-mmtx33transpose
+mmtx33transp
 mmtx33reflect
 mmtx33
 mmtx33
@@ -91,10 +91,10 @@ mmtx44isident
 mmtx44set
 mmtx44inverse
 mmtx44scale
-mmtx44rotx
-mmtx44roty
-mmtx44rotz
-mmtx44transpose
+mmtx44rotatex
+mmtx44rotatey
+mmtx44rotatez
+mmtx44transp
 mmtx44reflect
 mmtx44shadow
 mmtx44persp
@@ -103,11 +103,10 @@ mmtx44lookat
 
 mquat
 
-mplnset
-mplndot
-mplnpts
-mplnptsnorm
-mplninter
-mplnnorm
-mplnscale
-mplntrans
+mplaneset
+mplanedot
+mplanepts
+mplanenorm
+mplanescale
+mplaneinter
+
