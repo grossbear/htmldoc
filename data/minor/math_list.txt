@@ -7,10 +7,13 @@ mvec2reflect
 mvec2refract
 mvec2lerp
 mvec2len
-mvec2lensq
+mvec2len2
+mvec2dist
+mvec2dist2
 mvec2norm
 mvec2set
 mvec2scale
+mvec2scaleinv
 mvec2max
 mvec2min
 mvec2hermite
@@ -19,8 +22,8 @@ mvec2bary
 mvec2rotate
 mvec2transf
 mvec2transf3
-mvec2invert
-mvec2negate
+mvec2inv
+mvec2neg
 
 mvec3add
 mvec3sub
@@ -30,8 +33,12 @@ mvec3reflect
 mvec3refract
 mvec3lerp
 mvec3len
-mvec3lensq
+mvec3len2
+mvec3dist
+mvec3dist2
 mvec3norm
+mvec3scale
+mvec3scaleinv
 mvec3set
 mvec3max
 mvec3min
@@ -41,8 +48,8 @@ mvec3transf
 mvec3transf3
 mvec3proj
 mvec3unproj
-mvec3invert
-mvec3negate
+mvec3inv
+mvec3neg
 
 mvec4add
 mvec4sub
@@ -52,18 +59,21 @@ mvec4reflect
 mvec4refract
 mvec4lerp
 mvec4len
-mvec4lensq
+mvec4len2
+mvec4dist
+mvec4dist2
 mvec4norm
 mvec4set
 mvec4scale
+mvec4scaleinv
 mvec4max
 mvec4min
 mvec4hermite
 mvec4carmull
 mvec4bary
 mvec4transf
-mvec4invert
-mvec4negate
+mvec4inv
+mvec4neg
 
 mmtx33affine
 mmtx33mult
@@ -74,13 +84,11 @@ mmtx33isident
 mmtx33decomp
 mmtx33inverse
 mmtx33scale
-mmtx33rotatex
-mmtx33rotatey
-mmtx33rotatez
+mmtx33scaleinv
+mmtx33rotate
 mmtx33transp
+mmtx33transl
 mmtx33reflect
-mmtx33
-mmtx33
 
 mmtx44affine
 mmtx44mult
@@ -91,10 +99,12 @@ mmtx44isident
 mmtx44set
 mmtx44inverse
 mmtx44scale
+mmtx44scaleinv
 mmtx44rotatex
 mmtx44rotatey
 mmtx44rotatez
 mmtx44transp
+mmtx44transl
 mmtx44reflect
 mmtx44shadow
 mmtx44persp
