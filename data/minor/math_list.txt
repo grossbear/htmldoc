@@ -95,6 +95,7 @@ mmtx44isident
 mmtx44set
 mmtx44copy
 mmtx44inv
+mmtx44invaffine
 mmtx44scale
 mmtx44rotx
 mmtx44roty
@@ -108,6 +109,7 @@ mmtx44perspfov
 mmtx44ortho
 mmtx44lookat
 mmtx44frustum
+mmtx44
 
 mquatdot
 mquatset
@@ -117,7 +119,7 @@ mquatexp
 mquatconj
 mquatident
 mquatisident
-mquatinverse
+mquatinv
 mquatnorm
 mquatlen
 mquatlen2
@@ -126,6 +128,17 @@ mquatbary
 mquatslerp
 mquatnlerp
 mquatsquad
+mquatspline
+mquatangle
+mquataxis
+mquatrot
+mquatrotarc
+mquataxis
+mquat2axis
+mquatlog
+mquat2mtx44
+mquat2mtx33
+
 
 
 mplaneset
