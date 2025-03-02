@@ -1,27 +1,28 @@
 #minor library math functions description
-mvec2add -
-mvec2sub -
-mvec2ccw 
-mvec2dot
-mvec2reflect
-mvec2refract
-mvec2lerp
-mvec2len
-mvec2len2
-mvec2dist
-mvec2dist2
-mvec2norm
-mvec2set
-mvec2scale
-mvec2max
-mvec2min
-mvec2hermite
-mvec2catmull
-mvec2bary
-mvec2rot
-mvec2transf
-mvec2transf3
-mvec2inv
+mvec2add - Adds two 2D vectors.
+mvec2sub - Subtracts two 2D vectors.
+mvec2ccw - Returns the z-component by taking the cross product of two 2D vectors.
+mvec2dot - Determines the dot product of two 2D vectors.
+mvec2reflect - Returns reflected 2D vector to a normal.
+mvec2refract - Compute the direction of a refracted 2D vector.
+
+mvec2lerp - Performs a linear interpolation between two 2D vectors.
+mvec2len - Returns the length of a 2D vector.
+mvec2len2 - Returns the square of the length of a 2D vector.
+mvec2dist - Returns the distance between two 2D vectors.
+mvec2dist2 - Returns the square of the distance of a two 2D vectors.
+mvec2norm - Returns the normalized version of a 2D vector.
+mvec2set - Set components of a 2D vector.
+mvec2scale - Scales a 2D vector.
+mvec2max - Returns a 2D vector that is made up of the largest components of two 2D vectors
+mvec2min - Returns a 2D vector that is made up of the smallest components of two 2D vectors.
+mvec2hermite - Performs a Hermite spline interpolation, using the specified 2D vectors.
+mvec2catmull - Performs a Catmull-Rom interpolation, using the specified 2D vectors.
+mvec2bary - Returns a point in Barycentric coordinates, using the specified 2D vectors.
+mvec2rot - Performs a 2D vector rotation by a given angle.
+mvec2transf - Transforms a 2D vector by a given matrix.
+mvec2transf3 - Transforms a 2D vector by a given matrix.
+mvec2inv - Returns the inverted 2D vector.
 
 mvec3add
 mvec3sub
