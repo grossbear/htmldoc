@@ -13,7 +13,6 @@ mvec2dist2
 mvec2norm
 mvec2set
 mvec2scale
-mvec2scaleinv
 mvec2max
 mvec2min
 mvec2hermite
@@ -23,7 +22,7 @@ mvec2rot
 mvec2transf
 mvec2transf3
 mvec2inv
-mvec2neg
+
 
 mvec3add
 mvec3sub
@@ -38,7 +37,6 @@ mvec3dist
 mvec3dist2
 mvec3norm
 mvec3scale
-mvec3scaleinv
 mvec3set
 mvec3max
 mvec3min
@@ -49,7 +47,6 @@ mvec3transf3
 mvec3proj
 mvec3unproj
 mvec3inv
-mvec3neg
 
 mvec4add
 mvec4sub
@@ -65,7 +62,6 @@ mvec4dist2
 mvec4norm
 mvec4set
 mvec4scale
-mvec4scaleinv
 mvec4max
 mvec4min
 mvec4hermite
@@ -73,7 +69,6 @@ mvec4carmull
 mvec4bary
 mvec4transf
 mvec4inv
-mvec4neg
 
 mmtx33affine
 mmtx33mult
@@ -84,8 +79,8 @@ mmtx33copy
 mmtx33ident
 mmtx33isident
 mmtx33decomp
-mmtx33inverse
-mmtx33scaling
+mmtx33inv
+mmtx33scale
 mmtx33rot
 mmtx33transp
 mmtx33transl
@@ -99,8 +94,8 @@ mmtx44ident
 mmtx44isident
 mmtx44set
 mmtx44copy
-mmtx44inverse
-mmtx44scaling
+mmtx44inv
+mmtx44scale
 mmtx44rotx
 mmtx44roty
 mmtx44rotz
