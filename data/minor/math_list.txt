@@ -23,7 +23,6 @@ mvec2transf
 mvec2transf3
 mvec2inv
 
-
 mvec3add
 mvec3sub
 mvec3cross
@@ -85,6 +84,7 @@ mmtx33rot
 mmtx33transp
 mmtx33transl
 mmtx33reflect
+mmtx33quat
 
 mmtx44affine
 mmtx44mult
@@ -109,7 +109,7 @@ mmtx44perspfov
 mmtx44ortho
 mmtx44lookat
 mmtx44frustum
-mmtx44
+mmtx44quat
 
 mquatdot
 mquatset
@@ -136,10 +136,8 @@ mquatrotarc
 mquataxis
 mquat2axis
 mquatlog
-mquat2mtx44
-mquat2mtx33
-
-
+mquatmtx44
+mquatmtx33
 
 mplaneset
 mplanecopy
