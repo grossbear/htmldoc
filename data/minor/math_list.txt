@@ -19,7 +19,7 @@ mvec2min
 mvec2hermite
 mvec2catmull
 mvec2bary
-mvec2rotate
+mvec2rot
 mvec2transf
 mvec2transf3
 mvec2inv
@@ -86,7 +86,7 @@ mmtx33isident
 mmtx33decomp
 mmtx33inverse
 mmtx33scaling
-mmtx33rotate
+mmtx33rot
 mmtx33transp
 mmtx33transl
 mmtx33reflect
@@ -101,14 +101,15 @@ mmtx44set
 mmtx44copy
 mmtx44inverse
 mmtx44scaling
-mmtx44rotatex
-mmtx44rotatey
-mmtx44rotatez
+mmtx44rotx
+mmtx44roty
+mmtx44rotz
 mmtx44transp
 mmtx44transl
 mmtx44reflect
 mmtx44shadow
 mmtx44persp
+mmtx44perspfov
 mmtx44ortho
 mmtx44lookat
 mmtx44frustum
@@ -129,6 +130,7 @@ mquatmult
 mquatbary
 mquatslerp
 mquatnlerp
+mquatsquad
 
 
 mplaneset
