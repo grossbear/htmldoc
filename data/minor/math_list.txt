@@ -23,128 +23,130 @@ mvec2rot - Performs a 2D vector rotation by a given angle.
 mvec2transf - Transforms a 2D vector by a given matrix.
 mvec2transf3 - Transforms a 2D vector by a given matrix.
 mvec2inv - Returns the inverted 2D vector.
+mvec2neg - Negate the direction of a 2D vector.
 
-mvec3add
-mvec3sub
-mvec3cross
-mvec3dot
-mvec3reflect
-mvec3refract
-mvec3lerp
-mvec3len
-mvec3len2
-mvec3dist
-mvec3dist2
-mvec3norm
-mvec3scale
-mvec3set
-mvec3max
-mvec3min
-mvec3catmull
-mvec3bary
-mvec3transf
-mvec3transf3
-mvec3proj
-mvec3unproj
-mvec3inv
+mvec3add - Adds two 3D vectors.
+mvec3sub -
+mvec3cross-
+mvec3dot-
+mvec3reflect-
+mvec3refract-
+mvec3lerp-
+mvec3len-
+mvec3len2-
+mvec3dist-
+mvec3dist2-
+mvec3norm-
+mvec3scale-
+mvec3set-
+mvec3max-
+mvec3min-
+mvec3catmull-
+mvec3bary-
+mvec3transf-
+mvec3transf3-
+mvec3proj-
+mvec3unproj-
+mvec3inv-
+mvec2neg -
 
-mvec4add
-mvec4sub
-mvec4cross
-mvec4dot
-mvec4reflect
-mvec4refract
-mvec4lerp
-mvec4len
-mvec4len2
-mvec4dist
-mvec4dist2
-mvec4norm
-mvec4set
-mvec4scale
-mvec4max
-mvec4min
-mvec4hermite
-mvec4carmull
-mvec4bary
-mvec4transf
-mvec4inv
+mvec4add-
+mvec4sub-
+mvec4cross-
+mvec4dot-
+mvec4reflect-
+mvec4refract-
+mvec4lerp-
+mvec4len-
+mvec4len2-
+mvec4dist-
+mvec4dist2-
+mvec4norm-
+mvec4set-
+mvec4scale-
+mvec4max-
+mvec4min-
+mvec4hermite-
+mvec4carmull-
+mvec4bary-
+mvec4transf-
+mvec4inv-
 
-mmtx33affine
-mmtx33mult
-mmtx33det
-mmtx33set
-mmtx33lerp
-mmtx33copy
-mmtx33ident
-mmtx33isident
-mmtx33decomp
-mmtx33inv
-mmtx33scale
-mmtx33rot
-mmtx33transp
-mmtx33transl
-mmtx33reflect
-mmtx33quat
+mmtx33affine-
+mmtx33mult-
+mmtx33det-
+mmtx33set-
+mmtx33lerp-
+mmtx33copy-
+mmtx33ident-
+mmtx33isident-
+mmtx33decomp-
+mmtx33inv-
+mmtx33scale-
+mmtx33rot-
+mmtx33transp-
+mmtx33transl -
+mmtx33reflect -
+mmtx33quat -
 
-mmtx44affine
-mmtx44mult
-mmtx44lerp
-mmtx44det
-mmtx44ident
-mmtx44isident
-mmtx44set
-mmtx44copy
-mmtx44inv
-mmtx44invaffine
-mmtx44scale
-mmtx44rotx
-mmtx44roty
-mmtx44rotz
-mmtx44transp
-mmtx44transl
-mmtx44reflect
-mmtx44shadow
-mmtx44persp
-mmtx44perspfov
-mmtx44ortho
-mmtx44lookat
-mmtx44frustum
-mmtx44quat
+mmtx44affine -
+mmtx44mult -
+mmtx44lerp -
+mmtx44det -
+mmtx44ident -
+mmtx44isident -
+mmtx44set -
+mmtx44copy -
+mmtx44inv -
+mmtx44invaffine -
+mmtx44scale -
+mmtx44rotx -
+mmtx44roty -
+mmtx44rotz -
+mmtx44transp -
+mmtx44transl -
+mmtx44reflect -
+mmtx44shadow -
+mmtx44persp -
+mmtx44perspfov -
+mmtx44ortho -
+mmtx44lookat -
+mmtx44frustum -
+mmtx44quat -
 
-mquatdot
-mquatset
-mquatcopy
-mquatln
-mquatexp
-mquatconj
-mquatident
-mquatisident
-mquatinv
-mquatnorm
-mquatlen
-mquatlen2
-mquatmult
-mquatbary
-mquatslerp
-mquatnlerp
-mquatsquad
-mquatspline
-mquatangle
-mquataxis
-mquatrot
-mquatrotarc
-mquataxis
-mquat2axis
-mquatlog
+mquatdot -
+mquatset -
+mquatcopy -
+mquatln -
+mquatexp -
+mquatconj -
+mquatident -
+mquatisident -
+mquatinv -
+mquatnorm -
+mquatlen -
+mquatlen2 -
+mquatmult -
+mquatbary -
+mquatslerp -
+mquatnlerp -
+mquatsquad -
+mquatspline -
+mquatangle -
+mquataxis -
+mquatrot -
+mquatrotarc -
+mquataxis -
+mquat2axis -
+mquatlog -
 mquatmtx44
-mquatmtx33
+mquatmtx33-
 
-mplaneset
-mplanecopy
-mplanedot
-mplanepts
-mplanenorm
-mplanescale
-mplaneinter
+mplaneset -
+mplanecopy -
+mplanedot -
+mplanepts -
+mplanenorm -
+mplanescale -
+mplaneinter -
 
