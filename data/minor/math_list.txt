@@ -5,7 +5,6 @@ mvec2ccw - Returns the z-component by taking the cross product of two 2D vectors
 mvec2dot - Determines the dot product of two 2D vectors.
 mvec2reflect - Returns reflected 2D vector to a normal.
 mvec2refract - Compute the direction of a refracted 2D vector.
-
 mvec2lerp - Performs a linear interpolation between two 2D vectors.
 mvec2len - Returns the length of a 2D vector.
 mvec2len2 - Returns the square of the length of a 2D vector.
@@ -14,41 +13,42 @@ mvec2dist2 - Returns the square of the distance of a two 2D vectors.
 mvec2norm - Returns the normalized version of a 2D vector.
 mvec2set - Set components of a 2D vector.
 mvec2scale - Scales a 2D vector.
-mvec2max - Returns a 2D vector that is made up of the largest components of two 2D vectors
+mvec2max - Returns a 2D vector that is made up of the largest components of two 2D vectors.
 mvec2min - Returns a 2D vector that is made up of the smallest components of two 2D vectors.
 mvec2hermite - Performs a Hermite spline interpolation, using the specified 2D vectors.
 mvec2catmull - Performs a Catmull-Rom interpolation, using the specified 2D vectors.
 mvec2bary - Returns a point in Barycentric coordinates, using the specified 2D vectors.
 mvec2rot - Performs a 2D vector rotation by a given angle.
-mvec2transf - Transforms a 2D vector by a given matrix.
-mvec2transf3 - Transforms a 2D vector by a given matrix.
+mvec2transf - Transforms a 2D vector by a given 4x4 matrix. Returns 4D vector.
+mvec2transf2 - Transforms a 2D vector by a given 3x3 matrix. Returns 2D vector.
 mvec2inv - Returns the inverted 2D vector.
 mvec2neg - Negate the direction of a 2D vector.
 
 mvec3add - Adds two 3D vectors.
-mvec3sub -
-mvec3cross -
-mvec3dot -
-mvec3reflect -
-mvec3refract -
-mvec3lerp -
-mvec3len -
-mvec3len2 -
-mvec3dist -
-mvec3dist2 -
-mvec3norm -
-mvec3scale -
-mvec3set -
-mvec3max -
-mvec3min -
-mvec3catmull -
-mvec3bary -
-mvec3transf -
-mvec3transf3 -
-mvec3proj -
-mvec3unproj -
-mvec3inv - 
-mvec2neg -
+mvec3sub - Subtracts two 3D vectors.
+mvec3cross - Determines the cross-product of two 3D vectors.
+mvec3dot - Determines the dot product of two 3D vectors.
+mvec3reflect - Returns reflected 3D vector to a normal.
+mvec3refract - Compute the direction of a refracted 3D vector.
+mvec3lerp - Performs a linear interpolation between two 3D vectors.
+mvec3len - Returns the length of a 3D vector.
+mvec3len2 - Returns the square of the length of a 2D vector.
+mvec3dist - Returns the distance between two 3D vectors.
+mvec3dist2 - Returns the square of the distance of a two 3D vectors.
+mvec3norm - Returns the normalized version of a 3D vector.
+mvec3scale - Scales a 3D vector.
+mvec3set - Set components of a 3D vector.
+mvec3max - Returns a 3D vector that is made up of the largest components of two 3D vectors.
+mvec3min - Returns a 3D vector that is made up of the smallest components of two 3D vectors.
+mvec3hermite - Performs a Hermite spline interpolation, using the specified 3D vectors.
+mvec3catmull - Performs a Catmull-Rom interpolation, using the specified 3D vectors.
+mvec3bary - Returns a point in Barycentric coordinates, using the specified 3D vectors.
+mvec3transf - Transforms a 3D vector by a given 4x4 matrix. Returns 4D vector.
+mvec3transf3 - Transforms a 3D vector by a given 4x4 matrix. Returns 3D vector.
+mvec3proj - Projects a 3D vector from object space into screen space.
+mvec3unproj - Projects a 3D vector from screen space into object space.
+mvec3inv - Returns the inverted 3D vector.
+mvec2neg - Negate the direction of a 3D vector.
 
 mvec4add -
 mvec4sub -
