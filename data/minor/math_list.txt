@@ -88,49 +88,49 @@ mvec4cubic - Performs a cubic interpolation, using the specified 4D vectors.
 mvec4sqrp - Performs a square interpolation, using the specified 4D vectors.
 mvec4cosp - Performs a cosine interpolation, using the specified 4D vectors.
 
-mmtx33affine -
-mmtx33mult -
-mmtx33det -
+mmtx33affine - Builds a 3D affine transformation matrix. NULL arguments are treated as identity transformations.
+mmtx33mult - Determines the product of two matrices.
+mmtx33det - Returns the determinant of a matrix.
 mmtx33trace - Return the trace of the 3x3 matrix (sum of the values along the diagonal).
-mmtx33set -
-mmtx33lerp -
-mmtx33copy -
-mmtx33ident -
-mmtx33isident -
-mmtx33decomp -
-mmtx33inv -
-mmtx33scale -
-mmtx33rot -
-mmtx33transp -
-mmtx33transl -
-mmtx33reflect -
-mmtx33quat -
+mmtx33set - Set matrix components.
+mmtx33lerp - Performs a linear interpolation between two matrices.
+mmtx33copy - Copy matrix.
+mmtx33ident - Creates an identity matrix.
+mmtx33isident - Determines if a matrix is an identity matrix.
+mmtx33decomp - Breaks down a general 3D transformation matrix into its scalar, rotational, and translational components.
+mmtx33inv - Calculates the inverse of a matrix.
+mmtx33scale - Builds a matrix that scales along the x-axis and the y-axis.
+mmtx33rot - Builds a rotation matrix.
+mmtx33transp - Returns the matrix transpose of a matrix.
+mmtx33transl - Builds a matrix using the specified offsets.
+mmtx33reflect - Builds a matrix that reflects the coordinate system about a plane. //?
+mmtx33quat - Performs convertion from matrix to quaternion.
 
-mmtx44affine -
-mmtx44mult -
-mmtx44lerp -
-mmtx44det -
+mmtx44affine - Builds a 3D affine transformation matrix. NULL arguments are treated as identity transformations.
+mmtx44mult - Determines the product of two matrices.
+mmtx44lerp - Performs a linear interpolation between two matrices.
+mmtx44det - Returns the determinant of a matrix.
 mmtx44trace - Return the trace of the 4x4 matrix (sum of the values along the diagonal).
-mmtx44ident -
-mmtx44isident -
-mmtx44set -
-mmtx44copy -
-mmtx44inv -
-mmtx44invaffine -
-mmtx44scale -
-mmtx44rotx -
-mmtx44roty -
-mmtx44rotz -
-mmtx44transp -
-mmtx44transl -
-mmtx44reflect -
-mmtx44shadow -
-mmtx44persp -
-mmtx44perspfov -
-mmtx44ortho -
-mmtx44lookat -
-mmtx44frustum -
-mmtx44quat -
+mmtx44ident - Creates an identity matrix.
+mmtx44isident - Determines if a matrix is an identity matrix.
+mmtx44set - Set matrix components.
+mmtx44copy - Copy matrix.
+mmtx44inv - Calculates the inverse of a matrix.
+mmtx44invaffine - Calculates the inverse affine of a matrix.
+mmtx44scale - Builds a matrix that scales along the x-axis, the y-axis and the z-axis.
+mmtx44rotx - Builds a matrix that rotates around the x-axis.
+mmtx44roty - Builds a matrix that rotates around the y-axis.
+mmtx44rotz - Builds a matrix that rotates around the z-axis.
+mmtx44transp - Returns the matrix transpose of a matrix.
+mmtx44transl - Builds a matrix using the specified offsets.
+mmtx44reflect - Builds a matrix that reflects the coordinate system about a plane.
+mmtx44shadow - Builds a matrix that flattens geometry into a plane.
+mmtx44persp - Builds a (left-handed) perspective projection matrix.
+mmtx44perspfov - Builds a (left-handed) perspective projection matrix based on a field of view.
+mmtx44ortho - Builds a left-handed orthographic projection matrix.
+mmtx44lookat - Builds a left-handed, look-at matrix.
+mmtx44frustum - Builds a (left-handed) perspective projection matrix.
+mmtx44quat - Builds a quaternion from given matrix.
 
 mquatdot -
 mquatset -
