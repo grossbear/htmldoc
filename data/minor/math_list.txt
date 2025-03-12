@@ -37,7 +37,7 @@ mvec3reflect - Returns reflected 3D vector to a normal.
 mvec3refract - Compute the direction of a refracted 3D vector.
 mvec3lerp - Performs a linear interpolation between two 3D vectors.
 mvec3len - Returns the length of a 3D vector.
-mvec3len2 - Returns the square of the length of a 2D vector.
+mvec3len2 - Returns the square of the length of a 3D vector.
 mvec3dist - Returns the distance between two 3D vectors.
 mvec3dist2 - Returns the square of the distance of a two 3D vectors.
 mvec3norm - Returns the normalized version of a 3D vector.
@@ -55,37 +55,38 @@ mvec3unproj - Projects a 3D vector from screen space into object space.
 mvec3inv - Returns the inverted 3D vector.
 mvec3neg - Negate the direction of a 3D vector.
 mvec3eq - Check whether two given 3D vectors are almost equal.
-mvec3quad - Performs a quadratic interpolation, using the specified 2D vectors.
-mvec3cubic - Performs a cubic interpolation, using the specified 2D vectors.
-mvec3sqrp - Performs a square interpolation, using the specified 2D vectors.
-mvec3cosp - Performs a cosine interpolation, using the specified 2D vectors.
+mvec3quad - Performs a quadratic interpolation, using the specified 3D vectors.
+mvec3cubic - Performs a cubic interpolation, using the specified 3D vectors.
+mvec3sqrp - Performs a square interpolation, using the specified 3D vectors.
+mvec3cosp - Performs a cosine interpolation, using the specified 3D vectors.
 
-mvec4add -
-mvec4sub -
-mvec4cross -
-mvec4dot -
-mvec4reflect -
-mvec4refract -
-mvec4lerp -
-mvec4len -
-mvec4len2 -
-mvec4dist -
-mvec4dist2 -
-mvec4norm -
-mvec4set -
-mvec4scale -
-mvec4max -
-mvec4min -
-mvec4hermite -
-mvec4carmull -
-mvec4bary -
-mvec4transf -
-mvec4inv - 
+mvec4add - Adds two 4D vectors.
+mvec4sub - Subtracts two 4D vectors.
+mvec4cross - Determines the cross-product of two 4D vectors.
+mvec4dot - Determines the dot product of two 4D vectors.
+mvec4reflect - Returns reflected 4D vector to a normal.
+mvec4refract - Compute the direction of a refracted 4D vector.
+mvec4lerp - Performs a linear interpolation between two 4D vectors.
+mvec4len - Returns the length of a 4D vector.
+mvec4len2 - Returns the square of the length of a 4D vector.
+mvec4dist - Returns the distance between two 4D vectors.
+mvec4dist2 - Returns the square of the distance of a two 4D vectors.
+mvec4norm - Returns the normalized version of a 4D vector.
+mvec4set - Set components of a 4D vector.
+mvec4scale - Scales a 4D vector.
+mvec4max - Returns a 4D vector that is made up of the largest components of two 4D vectors.
+mvec4min - Returns a 4D vector that is made up of the smallest components of two 4D vectors.
+mvec4hermite - Performs a Hermite spline interpolation, using the specified 4D vectors.
+mvec4carmull - Performs a Catmull-Rom interpolation, using the specified 4D vectors.
+mvec4bary - Returns a point in Barycentric coordinates, using the specified 4D vectors.
+mvec4transf - Transforms a 4D vector by a given 4x4 matrix.
+mvec4inv - Returns the inverted 4D vector.
+mvec4neg - Negate the direction of a 4D vector.
 mvec4eq - Check whether two given 4D vectors are almost equal.
-mvec4quad - Performs a quadratic interpolation, using the specified 2D vectors.
-mvec4cubic - Performs a cubic interpolation, using the specified 2D vectors.
-mvec4sqrp - Performs a square interpolation, using the specified 2D vectors.
-mvec4cosp - Performs a cosine interpolation, using the specified 2D vectors.
+mvec4quad - Performs a quadratic interpolation, using the specified 4D vectors.
+mvec4cubic - Performs a cubic interpolation, using the specified 4D vectors.
+mvec4sqrp - Performs a square interpolation, using the specified 4D vectors.
+mvec4cosp - Performs a cosine interpolation, using the specified 4D vectors.
 
 mmtx33affine -
 mmtx33mult -
