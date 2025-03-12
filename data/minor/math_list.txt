@@ -23,6 +23,11 @@ mvec2transf - Transforms a 2D vector by a given 4x4 matrix. Returns 4D vector.
 mvec2transf2 - Transforms a 2D vector by a given 3x3 matrix. Returns 2D vector.
 mvec2inv - Returns the inverted 2D vector.
 mvec2neg - Negate the direction of a 2D vector.
+mvec2eq - Check whether two given 2D vectors are almost equal.
+mvec2quad - Performs a quadratic interpolation, using the specified 2D vectors.
+mvec2cubic - Performs a cubic interpolation, using the specified 2D vectors.
+mvec2sqrp - Performs a square interpolation, using the specified 2D vectors.
+mvec2cosp - Performs a cosine interpolation, using the specified 2D vectors.
 
 mvec3add - Adds two 3D vectors.
 mvec3sub - Subtracts two 3D vectors.
@@ -48,7 +53,12 @@ mvec3transf3 - Transforms a 3D vector by a given 4x4 matrix. Returns 3D vector.
 mvec3proj - Projects a 3D vector from object space into screen space.
 mvec3unproj - Projects a 3D vector from screen space into object space.
 mvec3inv - Returns the inverted 3D vector.
-mvec2neg - Negate the direction of a 3D vector.
+mvec3neg - Negate the direction of a 3D vector.
+mvec3eq - Check whether two given 3D vectors are almost equal.
+mvec3quad - Performs a quadratic interpolation, using the specified 2D vectors.
+mvec3cubic - Performs a cubic interpolation, using the specified 2D vectors.
+mvec3sqrp - Performs a square interpolation, using the specified 2D vectors.
+mvec3cosp - Performs a cosine interpolation, using the specified 2D vectors.
 
 mvec4add -
 mvec4sub -
@@ -70,11 +80,17 @@ mvec4hermite -
 mvec4carmull -
 mvec4bary -
 mvec4transf -
-mvec4inv -
+mvec4inv - 
+mvec4eq - Check whether two given 4D vectors are almost equal.
+mvec4quad - Performs a quadratic interpolation, using the specified 2D vectors.
+mvec4cubic - Performs a cubic interpolation, using the specified 2D vectors.
+mvec4sqrp - Performs a square interpolation, using the specified 2D vectors.
+mvec4cosp - Performs a cosine interpolation, using the specified 2D vectors.
 
 mmtx33affine -
 mmtx33mult -
 mmtx33det -
+mmtx33trace - Return the trace of the 3x3 matrix (sum of the values along the diagonal).
 mmtx33set -
 mmtx33lerp -
 mmtx33copy -
@@ -93,6 +109,7 @@ mmtx44affine -
 mmtx44mult -
 mmtx44lerp -
 mmtx44det -
+mmtx44trace - Return the trace of the 4x4 matrix (sum of the values along the diagonal).
 mmtx44ident -
 mmtx44isident -
 mmtx44set -
