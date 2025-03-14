@@ -155,7 +155,9 @@ mquatsquadsetup - Sets up control points for spherical quadrangle interpolation.
 
 mquataxisangle - Computes a quaternion's axis and angle of rotation.
 
-mquat
+mquatrotaxis - Rotates a quaternion about an arbitrary axis.
+mquatrotmatrix - Builds a quaternion from a rotation matrix.
+mquatrotyawpitchroll - Builds a quaternion with the given yaw, pitch, and roll.
 
 mquatangle -
 mquataxis -
