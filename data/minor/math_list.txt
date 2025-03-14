@@ -132,23 +132,23 @@ mmtx44lookat - Builds a left-handed, look-at matrix.
 mmtx44frustum - Builds a (left-handed) perspective projection matrix.
 mmtx44quat - Builds a quaternion from given matrix.
 
-mquatdot -
-mquatset -
-mquatcopy -
-mquatln -
-mquatexp -
-mquatconj -
-mquatident -
-mquatisident -
-mquatinv -
-mquatnorm -
-mquatlen -
-mquatlen2 -
-mquatmult -
-mquatbary -
-mquatslerp -
-mquatnlerp -
-mquatsquad -
+mquatdot - Returns the dot product of two quaternions.
+mquatset - Set quaternion conponents.
+mquatcopy - Copy quaternion.
+mquatln - Calculates the natural logarithm.
+mquatexp - Calculates the exponential.
+mquatconj - Returns the conjugate of a quaternion.
+mquatident - Returns the identity quaternion.
+mquatisident - Determines if a quaternion is an identity quaternion.
+mquatinv - Conjugates and renormalizes a quaternion.
+mquatnorm - Computes a unit length quaternion.
+mquatlen - Returns the length of a quaternion.
+mquatlen2 - Returns the square of the length of a quaternion.
+mquatmult - Multiplies two quaternions.
+mquatbary - Returns a quaternion in barycentric coordinates.
+mquatslerp - Interpolates between two quaternions, using spherical linear interpolation.
+mquatnlerp - Interpolates between two quaternions, using spherical linear interpolation.
+mquatsquad - 
 mquatspline -
 mquatangle -
 mquataxis -
