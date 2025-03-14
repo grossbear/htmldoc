@@ -148,8 +148,15 @@ mquatmult - Multiplies two quaternions.
 mquatbary - Returns a quaternion in barycentric coordinates.
 mquatslerp - Interpolates between two quaternions, using spherical linear interpolation.
 mquatnlerp - Interpolates between two quaternions, using spherical linear interpolation.
-mquatsquad - 
-mquatspline -
+mquatsquad - Interpolates between quaternions, using spherical quadrangle interpolation.
+mquatspline - Sets up control points for spherical quadrangle interpolation.
+
+mquatsquadsetup - Sets up control points for spherical quadrangle interpolation.
+
+mquataxisangle - Computes a quaternion's axis and angle of rotation.
+
+mquat
+
 mquatangle -
 mquataxis -
 mquatrot -
