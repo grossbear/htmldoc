@@ -97,7 +97,7 @@ mmtx33lerp - Performs a linear interpolation between two matrices.
 mmtx33copy - Copy matrix.
 mmtx33ident - Creates an identity matrix.
 mmtx33isident - Determines if a matrix is an identity matrix.
-mmtx33decomp - Breaks down a general 3D transformation matrix into its scalar, rotational, and translational components.
+mmtx33decomp - Breaks down a general transformation matrix into its scalar, rotational, and translational components.
 mmtx33inv - Calculates the inverse of a matrix.
 mmtx33scale - Builds a matrix that scales along the x-axis and the y-axis.
 mmtx33rot - Builds a rotation matrix.
@@ -117,6 +117,7 @@ mmtx44set - Set matrix components.
 mmtx44copy - Copy matrix.
 mmtx44inv - Calculates the inverse of a matrix.
 mmtx44invaffine - Calculates the inverse affine of a matrix.
+mmtx44decomp - Breaks down a general 3D transformation matrix into its scalar, rotational, and translational components.
 mmtx44scale - Builds a matrix that scales along the x-axis, the y-axis and the z-axis.
 mmtx44rotx - Builds a matrix that rotates around the x-axis.
 mmtx44roty - Builds a matrix that rotates around the y-axis.
@@ -130,7 +131,8 @@ mmtx44perspfov - Builds a (left-handed) perspective projection matrix based on a
 mmtx44ortho - Builds a left-handed orthographic projection matrix.
 mmtx44lookat - Builds a left-handed, look-at matrix.
 mmtx44frustum - Builds a (left-handed) perspective projection matrix.
-mmtx44quat - Builds a quaternion from given matrix.
+mmtx44quat - Builds a quaternion from rotation matrix.
+
 
 mquatadd - Adds two 4D vectors.
 mquatsub - Subtracts two 3D vectors.
@@ -156,12 +158,13 @@ mquatspline - Sets up control points for spherical quadrangle interpolation.
 mquatln - Calculates the natural logarithm.
 mquatexp - Calculates the exponential.
 mquatmtx44 - Builds a rotation matrix from a quaternion.
-
-mquatangle - 
-mquataxis - Getting Normalised Vector Specified By Vector Part Of Quaternion
-mquatrotangles - Builds a quaternion with the given yaw, pitch, and roll.
-mquatrotaxis - Rotates a quaternion about an arbitrary axis.
-
+mquatangle - Returns rotatation angle of a quaternion.
+mquataxis - Returns axis specified by vector part of a quaternion.
+mquatrot - Rotates a quaternion using another quaternion.
+mquatrotvec3 - Rotates 3D Vector Using Quaternion (v, q, v)
+mquatrotarc - Create Quaternion For Rotating From Vector V1 To Vector V2
+mquatrotaxis - Builds a quaternion from axis and rotation angle. (q, v, angle)
+mquateuler - Builds a quaternion with the given Euler angles like yaw, pitch, and roll.
 
 
 mplaneset -
