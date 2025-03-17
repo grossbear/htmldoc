@@ -104,7 +104,7 @@ mmtx33rot - Builds a rotation matrix.
 mmtx33transp - Returns the matrix transpose of a matrix.
 mmtx33transl - Builds a matrix using the specified offsets.
 mmtx33reflect - Builds a matrix that reflects the coordinate system about a plane. //?
-mmtx33quat - Performs convertion from matrix to quaternion.
+
 
 mmtx44affine - Builds a 3D affine transformation matrix. NULL arguments are treated as identity transformations.
 mmtx44mult - Determines the product of two matrices.
@@ -132,42 +132,37 @@ mmtx44lookat - Builds a left-handed, look-at matrix.
 mmtx44frustum - Builds a (left-handed) perspective projection matrix.
 mmtx44quat - Builds a quaternion from given matrix.
 
+mquatadd - Adds two 4D vectors.
+mquatsub - Subtracts two 3D vectors.
 mquatdot - Returns the dot product of two quaternions.
 mquatset - Set quaternion conponents.
 mquatcopy - Copy quaternion.
-mquatln - Calculates the natural logarithm.
-mquatexp - Calculates the exponential.
-mquatconj - Returns the conjugate of a quaternion.
 mquatident - Returns the identity quaternion.
 mquatisident - Determines if a quaternion is an identity quaternion.
-mquatinv - Conjugates and renormalizes a quaternion.
-mquatnorm - Computes a unit length quaternion.
+mquateq - Check whether two given 4D vectors are almost equal.
+mquatconj - Returns the conjugate of a quaternion.
 mquatlen - Returns the length of a quaternion.
 mquatlen2 - Returns the square of the length of a quaternion.
+mquatnorm - Computes a unit length quaternion.
 mquatmult - Multiplies two quaternions.
+mquatscale - Scale quaternion by value.
+mquatinv - Returns the inverted quaternion.
 mquatbary - Returns a quaternion in barycentric coordinates.
+mquatlerp - Performs a linear interpolation between two quaternions.
 mquatslerp - Interpolates between two quaternions, using spherical linear interpolation.
-mquatnlerp - Interpolates between two quaternions, using spherical linear interpolation.
+mquatnlerp - Interpolates between two quaternions, using optimized spherical linear interpolation.
 mquatsquad - Interpolates between quaternions, using spherical quadrangle interpolation.
 mquatspline - Sets up control points for spherical quadrangle interpolation.
+mquatln - Calculates the natural logarithm.
+mquatexp - Calculates the exponential.
+mquatmtx44 - Builds a rotation matrix from a quaternion.
 
-mquatsquadsetup - Sets up control points for spherical quadrangle interpolation.
-
-mquataxisangle - Computes a quaternion's axis and angle of rotation.
-
+mquatangle - 
+mquataxis - Getting Normalised Vector Specified By Vector Part Of Quaternion
+mquatrotangles - Builds a quaternion with the given yaw, pitch, and roll.
 mquatrotaxis - Rotates a quaternion about an arbitrary axis.
-mquatrotmatrix - Builds a quaternion from a rotation matrix.
-mquatrotyawpitchroll - Builds a quaternion with the given yaw, pitch, and roll.
 
-mquatangle -
-mquataxis -
-mquatrot -
-mquatrotarc -
-mquataxis -
-mquat2axis -
-mquatlog -
-mquatmtx44
-mquatmtx33-
+
 
 mplaneset -
 mplanecopy -
@@ -176,4 +171,3 @@ mplanepts -
 mplanenorm -
 mplanescale -
 mplaneinter -
-
