@@ -162,9 +162,10 @@ mquatangle - Returns rotatation angle of a quaternion.
 mquataxis - Returns axis specified by vector part of a quaternion.
 mquatrot - Rotates a quaternion using another quaternion.
 mquatrotvec3 - Rotates 3D Vector Using Quaternion (v, q, v)
-mquatrotarc - Create Quaternion For Rotating From Vector V1 To Vector V2
+mquatrotarc - Builds a quaternion for rotating from vector v1 to vector v2.
 mquatrotaxis - Builds a quaternion from axis and rotation angle. (q, v, angle)
-mquateuler - Builds a quaternion with the given Euler angles like yaw, pitch, and roll.
+mquatroteuler - Builds a quaternion with the given Euler angles like yaw, pitch, and roll.
+mquateuler - Returns a quaternion Euler angles like yaw, pitch, and roll.
 
 
 mplaneset -
