@@ -168,10 +168,10 @@ mquatroteuler - Builds a quaternion with the given Euler angles like yaw, pitch,
 mquateuler - Returns a quaternion Euler angles like yaw, pitch, and roll.
 
 
-mplaneset -
-mplanecopy -
-mplanedot -
-mplanepts -
-mplanenorm -
-mplanescale -
-mplaneinter -
+mplaneset - Set plane components.
+mplanecopy - Copy a plane.
+mplanedot - Computes the dot product of a plane and a 4D vector.
+mplanepts - Constructs a plane from three points.
+mplanenorm - Normalizes the plane coefficients so that the plane normal has unit length.
+mplanescale - Scale the plane with the given scaling factor.
+mplaneinter - Finds the intersection between a plane and a line.
