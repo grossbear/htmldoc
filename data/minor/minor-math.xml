@@ -1,5 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <minor-lib>
-    <math>
-    </math>
+  <math>
+    <func-list>
+      <function>
+        <name>mvec2set</name>
+        <overview>Set components of a 2D vector.</overview>
+        <syntax>void mvec2set(tvector2 * out, float x, float y);</syntax>
+      </function>
+      <function>
+        <name>mvec2add</name>
+        <overview>Adds two 2D vectors.</overview>
+        <syntax>void mvec2add(tvector2 * out, const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2sub</name>
+        <overview>Subtracts two 2D vectors.</overview>
+        <syntax>void mvec2sub(tvector2 * out, const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2ccw</name>
+        <overview>Retruns the z-component by taking the cross product of two 2D vectors.</overview>
+        <syntax>float mvec2ccw(const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2dot</name>
+        <overview>Determines the dot product of two 2D vectors.</overview>
+        <syntax>float mvec2dot(const tvector2 * v1, const tector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mec2reflect</name>
+        <overview>Returns reflected 2D vector to a normal.</overview>
+        <syntax>void mvec2reflect(tvector2 * out, const tvector2 * vec, const tvector2 * normal);</syntax>
+      </function>
+      <function>
+        <name>mvec2refract</name>
+        <overview>Compute the direction of a refracted 2D vector.</overview>
+        <syntax>void mvec2refract(tvector2  * out, const tvector2 * vec, const tvector2 * normal, float ratio);</syntax>
+      </function>
+      <function>
+        <name>mvec2lerp</name>
+        <overview>Performs a linear interpolation between two 2D vectors.</overview>
+        <syntax>void mvec2lerp(tvector2 * out, const tvector2 * v1, const tvector2 * v2, float t);</syntax>
+      </function>
+      <function>
+        <name>mvec2len</name>
+        <overview>Returns the length of a 2D vector.</overview>
+        <syntax>float mbec2len(const tvector2 * len);</syntax>
+      </function>
+      <function>
+        <name>mvec2len2</name>
+        <overview>Returns the square of the length of a 2D vector.</overview>
+        <syntax>float mbec2len(const tvector2 * len);</syntax>
+      </function>
+      <function>
+        <name>mvec2dist</name>
+        <overview>Returns the distance between two 2D vector.</overview>
+        <syntax>float mvec2dist(const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2dist2</name>
+        <overview>Returns the square of the distance of a two 2D vectors.</overview>
+        <syntax>float mvec2dist2(const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2norm</name>
+        <overview>Returns the normalizaed version of a 2D vector.</overview>
+        <syntax>void mvec2norm(tvetor2 * out, const tvector2 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec2scale</name>
+        <overview>Scales a 2D vector.</overview>
+        <syntax>float mvec2dist(const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2max</name>
+        <overview>Returns a 2D vector that is made up of the largest components of two 2D vectors.</overview>
+        <syntax>void mvec2max(tvector2 * out, const tvetor2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2min</name>
+        <overview>Returns a 2D vector that is made up of the smallest components of two 2D vectors.</overview>
+        <syntax>void mvec2min(tvector2 * out, const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2hermite</name>
+        <overview>Performs a Hermite spline interpolation, using the specified 2D vectors.</overview>
+        <syntax>void mvec2hermite(tvector2 * out, const tvector2 * v1, const tvector2 vt1, const tvector2 * v2, const tvector2 * vt2, float w, float t, float b);</syntax>
+        <remarks>w - weight, t - tension, b - bias</remarks>
+      </function>
+      <function>
+        <name>mvec2catmull</name>
+        <overview>Performs a Catmull-Rom interpolation, using the specified 2D vectors.</overview>
+        <syntax>void mvec2catmull(tvector2 * out, const tvector2 * v1, const tvector2 * v2, const tvector2 * v3, const tvector2 * v4, float f);</syntax>
+      </function>
+      <function>
+        <name>mvec2bary</name>
+        <overview>Returns a point in Barycentric coordinates, using the specified 2D vectors.</overview>
+        <syntax>void mvec2bary(tvector2 out, const tvector2 * v1, const tvector2 * v2, const tvector2 * v3, float f, float g);</syntax>
+      </function>
+      <function>
+        <name>mvec2rot</name>
+        <overview>Performs a 2D vector rotation by a given angle.</overview>
+        <syntax>void mvec2rot(tvector2 * out, const tvector2 * vec, float angle);</syntax>
+      </function>
+      <function>
+        <name>mec2transf</name>
+        <overview>Transforms a 2D vector by a given 4x4 matrix. Returns 4D vector.</overview>
+        <syntax>void mvec2transf(tvector4 * out, const tvector2 * vec, const tmatrix44 * mtx);</syntax>
+      </function>
+      <function>
+        <name>mvec2transf2</name>
+        <overview>Transforms a 2D vector by a given 3x3 matrix. Returns 2D vector.</overview>
+        <syntax>void mvec2transf2(tvector2 * out, const tvector2 * vec, const tmatrix33 * mtx);</syntax>
+      </function>
+      <function>
+        <name>mvec2inv</name>
+        <overview>Returns the inverted 2D vector.</overview>
+        <syntax>void mvec2inv(tvector2 * out, const tvector2 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec2neg</name>
+        <overview>Negate the direction of a 2D vector.</overview>
+        <syntax>void mvec2neg(tvector2 * out, const tvector2 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec2eq</name>
+        <overview>Check whether two given 2D vectors are almost equal.</overview>
+        <syntax>bool mvec2eq(const tvector2 * v1, const tvector2 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2quad</name>
+        <overview>Performs a quatradic interpolation, using the specified 2D vectors.</overview>
+        <syntax>void mvec2quad(tvector2 * out, const tvector2 * v1, const tvector2 * v2, const tvector2 * v3, float f);</syntax>
+        <remarks>f  - factor</remarks>
+      </function>
+      <function>
+        <name>mvec2cubic</name>
+        <overview>Performs a cubic interpolation, using the speciied 2D vectors.</overview>
+        <syntax>void mvec2cubic(tvector2 * out, const tvector2 * v1, const tvector2 * v2, const tvector2 * v3, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec2sqrp</name>
+        <overview>Performs a square interpolation, using the specified 2D vectors.</overview>
+        <syntax>void mvec2sqrp(tvector2 * out, const tvector2 * v1, cosnt tvector2 * v2, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec2cosp</name>
+        <overview>Perfroms a cosine interpolation, using the specified 2D vectors.</overview>
+        <syntax>void mvec2cosp(tvector2 * out, tvector2 * v1, const tvector2 * v2, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+    </func-list>
+  </math>
 </minor-lib>
