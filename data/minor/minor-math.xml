@@ -152,6 +152,706 @@
         <syntax>void mvec2cosp(tvector2 * out, tvector2 * v1, const tvector2 * v2, float f);</syntax>
         <remarks>f - factor</remarks>
       </function>
+      <function>
+        <name>mvec3add</name>
+        <overview>Adds two 3D vectors.</overview>
+        <syntax>void mvec3add(tvector3 * out, const tvector3 * v1, const tector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mec3sub</name>
+        <overview>Subtracts two 3D vectos.</overview>
+        <syntax>void mvec3sub(tvector3 * out, const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3cross</name>
+        <overview>Determines the cross-product of two 3D vectors.</overview>
+        <syntax>void mvec3cross(tvector3 * out, const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3dot</name>
+        <overview>Determines the dot product of two 3D vectors.</overview>
+        <syntax>float mvec3dot(const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3reflect</name>
+        <overview>Returns reflected 3D vector to a normal.</overview>
+        <syntax>void mvec3reflect(tvector3 * out, const tvector3 * dir, const tvector3 * norm);</syntax>
+      </function>
+      <function>
+        <name>mvec3refract</name>
+        <overview>Compute the direction of a refracted 3D vector.</overview>
+        <syntax>void mvec3reract(tvector3 * out, const tvector3 * dir, const tvector3 * norm, float ratio);</syntax>
+      </function>
+      <function>
+        <name>mvec3lerp</name>
+        <overview>Performs a linear intepolation between two 3D vectors.</overview>
+        <syntax>void mvec3lerp(tvector3 * out, const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3len</name>
+        <overview>Returns the length of a 3D vector.</overview>
+        <syntax>float mvec3len(const tvector3 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec2len2</name>
+        <overview>Returns the square of the length of a 3D vector.</overview>
+        <syntax>float mvec3len2(const tvector3 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec3dist</name>
+        <overview>Returns the distance between two 3D vectors.</overview>
+        <syntax>float mvec3dist(const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3dist2</name>
+        <overview>Reurns the square of the distance of a two 3D vectors.</overview>
+        <syntax>float mvec3dist2(const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3norm</name>
+        <overview>Returns the normalized version of a 3D vector.</overview>
+        <syntax>void mvec3norm(tvector3 * out, const tvector3 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec3scale</name>
+        <overview>Scales a 3D vector.</overview>
+        <syntax>void mvec3scale(tvector3 * out, const tvector3 * vec, float val);</syntax>
+      </function>
+      <function>
+        <name>mvec3set</name>
+        <overview>Set components of a 3D vector.</overview>
+        <syntax>void mvec3set(tvector3 * out, float x, float y, float z);</syntax>
+      </function>
+      <function>
+        <name>mvec3max</name>
+        <overview>Returns a 3D vector that is made up of the largest components of two 3D vectors.</overview>
+        <syntax>void mvec3max(tvector3 * out, const tvector3 * v1, const tector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3min</name>
+        <overview>Returns a 3D vector that is made up of the smallest components o two 3D vectors.</overview>
+        <syntax>void mvec3min(tvector3 * out, const tvector3 * v1, const tvector3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3hermite</name>
+        <overview>Performs a Hermite spline intepolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3hermite(tvector3 * out, const tvector3 * v1, const tvector3 vt1, const tvector3 * v2, const tvector3 * vt2, float w, float t, float b);</syntax>
+        <remarks>w - weight, t - tension, b - bias</remarks>
+      </function>
+      <function>
+        <name>mvec3catmull</name>
+        <overview>Performs a Catmull-Rom interpolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3catmull(tvector3 * out, const tvecor3 * v1, const tvector3 * v2, cont tvector3 * v3, const tvector3 * v4, float w);</syntax>
+      </function>
+      <function>
+        <name>mvec3bary</name>
+        <overview>Returns a point in Barycentric coordinates, using the specified 3D vectors.</overview>
+        <syntax>void mvec3bary(tvector3 * out, const tvector3 * v1, const tvector3 * v2, const tvector3 * v3, float f, float g);</syntax>
+      </function>
+      <function>
+        <name>mvec3transf</name>
+        <overview>Transforms a 3D vector by a given 4x4 matrix. Returns 4D vector.</overview>
+        <syntax>void mvec3transf(tvector4 * out, const tvector3 * vec, const tmatrix44 * mtx);</syntax>
+      </function>
+      <function>
+        <name>mvec3transf3</name>
+        <overview>Transforms a 3D vector by a gien 4x4 matrix. Returns a 3D vector.</overview>
+        <syntax>void mvec3transf3(tvector3 * out, const tvector3 * vec, const tmatrix44 * mtx);</syntax>
+      </function>
+      <function>
+        <name>mvec3proj</name>
+        <overview>Projects a 3D vector from object space into screen space.</overview>
+        <syntax>void mvec3proj(tector3 * out, tvecto3 * proj);</syntax>
+      </function>
+      <function>
+        <name>mvec3unproj</name>
+        <overview>Projects a 3D vector from screen space into object space.</overview>
+        <syntax>void mvec3unproj(tvector3 * out, tvector3 * proj);</syntax>
+      </function>
+      <function>
+        <name>mvec3inv</name>
+        <overview>Returns the inverted 3D vector.</overview>
+        <syntax>void mvec3inv(tvector3 * out, const tvecor3 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec3neg</name>
+        <overview>Negate the direction of a 3D vector.</overview>
+        <syntax>void mvec3neg(tvector3 * out, const tvector3 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec3eq</name>
+        <overview>Check whether two gien 3D vectors are almost equal.</overview>
+        <syntax>bool mvec3eq(const tvector3 * v1, const tvectro3 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec3quad</name>
+        <overview>Performs a quatratic interpolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3quad(tvector3 * out, const tvector3 * v1, const tvector3 * v2, const tvector3 * v3, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec3cubic</name>
+        <overview>Performs a cubic inerpolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3cubic(tvector3 * out, const tvector3 * v1, const tvector3 * v2, const tvector3 * v3, const tector3 * v4, flaot f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec3sqrp</name>
+        <overview>Performs a square interpolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3sqrp(tvector3 * out, const tvector3 * v1, const tvector3 * v2, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec3cosp</name>
+        <overview>Performs a cosine interpolation, using the specified 3D vectors.</overview>
+        <syntax>void mvec3cosp(tvector3 * out, const tvector3 * v1, const tvector3 * v2, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec4add</name>
+        <overview>Adds two 4D vectors.</overview>
+        <syntax>void mvec4add(tvector4 * out, const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4sub</name>
+        <overview>Subtracts two 4D vectors.</overview>
+        <syntax>void mvec4sub(tvector4 * out, const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4cross</name>
+        <overview>Determines the cross-product of two 4D vectors.</overview>
+        <syntax>void mvec4cross(tvector4 * out, const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4dot</name>
+        <overview>Determines the dot product of two 4D vectors.</overview>
+        <syntax>float mvec4dot(const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4reflect</name>
+        <overview>Returns reflected 4D vector to a normal.</overview>
+        <syntax>void mvec4reflect(tvector4 * out, const tvector4 * dir, const tvector4 * norm);</syntax>
+      </function>
+      <function>
+        <name>mvec4refract</name>
+        <overview>Compute the direction of a refracted 4D vector.</overview>
+        <syntax>void mvec4refract(tvector4 * out, const tvector4 * dir, const tvector4 * norm, float ratio);</syntax>
+      </function>
+      <function>
+        <name>mvec4lerp</name>
+        <overview>Performs a linear interpolation between two 4D vectors.</overview>
+        <syntax>void mvec4lerp(tvector4 * out, const tvector4 * v1, const tvector4 * v2, float t);</syntax>
+      </function>
+      <function>
+        <name>mvec4len</name>
+        <overview>Returns the length of a 4D vector.</overview>
+        <syntax>float mvec4len(const tvector4 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec4len2</name>
+        <overview>Returns the square of the length of a 4D vector.</overview>
+        <syntax>float mvec4len2(const tvector4 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec4dist</name>
+        <overview>Returns the distance between two 4D vectors.</overview>
+        <syntax>float mvec4dist(const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec2dist2</name>
+        <overview>Returns the square of the distance of a two 4D vectors.</overview>
+        <syntax>float mvec4dist2(const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4norm</name>
+        <overview>Returns the normalized version of a 4D vector.</overview>
+        <syntax>void mvec4norm(tvector4 * out, const tvector4 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec4set</name>
+        <overview>Set components of a 4D vector.</overview>
+        <syntax>void mvec4set(tvector4 * out, float x, float y, float z, float w);</syntax>
+      </function>
+      <function>
+        <name>mvec4scale</name>
+        <overview>Scales a 4D vector.</overview>
+        <syntax>void mvec4scale(tvector4 * out, const tvetor4 * vec, float val);</syntax>
+      </function>
+      <function>
+        <name>mvec4max</name>
+        <overview>Returns a 4D vector that is made up of the larest components of to 4D vectors.</overview>
+        <syntax>vod mvec4max(tvector4 * out, const tvector4 * v1, cosnt tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4min</name>
+        <overview>Returns a 4D vector that is made up of the smallest components of two 4D vectors.</overview>
+        <syntax>void mvec4min(tvector4 * out, cosnt tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4hermite</name>
+        <overview>Performs a Hermite spline interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4hermite(tvector4 * out, const tvector4 * v1, const tvector4 * vt1, const tvector4 * v2, const tvector4 * v2, const tvector4 * vt2, float w, float t, float b);</syntax>
+        <remarks>w - weight, t - tension, b - bias</remarks>
+      </function>
+      <function>
+        <name>mvec4catmull</name>
+        <overview>Performs a Catmull-Rom interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4catmull(tvector4 * out, const tvector4 * v1, const tvector4 * v2, const tvector4 * v3, const tvector4 * v4, float w);</syntax>
+      </function>
+      <function>
+        <name>mvec4bary</name>
+        <overview>Returns a point in Barycentric coordinates, using the specified 4D vectors.</overview>
+        <syntax>void mvec4bary(tvector4 * out, const tvector4 * v1, const tvector4 * v2, const tvector4 * v3, float f, float g);</syntax>
+      </function>
+      <function>
+        <name>mvec4transf</name>
+        <overview>Transforms a 4D vector by a given 4x4 matrix.</overview>
+        <syntax>void mvec4transf(tvector4 * out, const tvector4 * vec, const tmatrix44 * mtx);</syntax>
+      </function>
+      <function>
+        <name>mvec4inv</name>
+        <overview>Returns the inverted 4D vector.</overview>
+        <syntax>void mvec4inv(vector4 * out, const tvector4 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec4neg</name>
+        <overview>Negate the direction of a 4D vector.</overview>
+        <syntax>void mvec4neg(tvector4 * out, const tvector4 * vec);</syntax>
+      </function>
+      <function>
+        <name>mvec4eq</name>
+        <overview>Check whether two given 4D vectors are almost equal.</overview>
+        <syntax>bool mvec4eq(const tvector4 * v1, const tvector4 * v2);</syntax>
+      </function>
+      <function>
+        <name>mvec4quad</name>
+        <overview>Performs a quatratic interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4quad(tvector4 * out, const tvecor4 * v1, const tvecor4 * v2, const tvector * v3, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec4cubic</name>
+        <overview>Performs a cubic interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4cubic(tvector4 * out, const tvector4 * v1, const tvector4 * v2, const tvector4 * v3, const tvector4 * v4, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mvec4sqrp</name>
+        <overview>Performs a square interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4sqrp(tvector4 * out, const tvector4 * v1, cosnt tvector4 * v2, float f);</syntax>
+        <remarks>f  - factor</remarks>
+      </function>
+      <function>
+        <name>mvec4cosp</name>
+        <overview>Performs a cosine interpolation, using the specified 4D vectors.</overview>
+        <syntax>void mvec4cosp(tvector4 * out, const tvecotr4 * v1, cosnt tvector4 * v2, float f);</syntax>
+        <remarks>f - factor</remarks>
+      </function>
+      <function>
+        <name>mmtx33affine</name>
+        <overview>Builds a 3D affine transformation matrix. NULL arguments ae treated as identity transformations.</overview>
+        <syntax>void mmtx33affine( matrix33 * out, const tmatrix33 * mtx);</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
+      <function>
+        <name>func</name>
+        <overview>desc</overview>
+        <syntax>code</syntax>
+      </function>
     </func-list>
   </math>
 </minor-lib>
