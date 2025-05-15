@@ -450,408 +450,431 @@
       <function>
         <name>mmtx33affine</name>
         <overview>Builds a 3D affine transformation matrix. NULL arguments ae treated as identity transformations.</overview>
-        <syntax>void mmtx33affine( matrix33 * out, const tmatrix33 * mtx);</syntax>
+        <syntax>void mmtx33affine(tmatrix33 * out, float scale, const tvector2 * rotcent, float angle, cosnt tvector2 trans);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33mult</name>
+        <overview>Determines the product of two matrices.</overview>
+        <syntax>void mmtx33mult(tmatrix33 * out, const tmatrix33 * mtx1, const tmatrix33 * mtx2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33det</name>
+        <overview>Returns the determinant of a matrix</overview>
+        <syntax>float mmtx33det(const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33trace</name>
+        <overview>Return the trace of the 3x3 matrix (sum of the value along the diagonal).</overview>
+        <syntax>float mmtx33trace(const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33set</name>
+        <overview>Set matrix components.</overview>
+        <syntax>void mmtx33trace(tmatrix33 * out, const tvector3 * vec1, const tvector3 * vec2, const tvector3 * vec3);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33lerp</name>
+        <overview>Performs a linear interpolation between two matrices</overview>
+        <syntax>void mmtx33lerp(tmatrix33 * out, const tmatrix33 * mtx1, const tmatrix33 * mtx2, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33copy</name>
+        <overview>Copy matrix</overview>
+        <syntax>void mmtx33copy(tmatrix33 * out, const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33ident</name>
+        <overview>Creates an identity matrix</overview>
+        <syntax>void mmtx33ident(tmatrix33 * out);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33isident</name>
+        <overview>Determines if a matrix ia an identity matrix.</overview>
+        <syntax>bool mmtx33isident(const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33decomp</name>
+        <overview>Breaks down a general transformation matrix into its scalar, rotational, and translational components.</overview>
+        <syntax>void mmtx33decomp(tvector3 * scale, tvector3 * rot, tvector3 * trans, const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33inv</name>
+        <overview>Calculates the inverse of a matrix.</overview>
+        <syntax>void mmtx33inv(tmatrix33 * out, const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33scale</name>
+        <overview>Build a matrix that scales along the x-axis and the y-axis.</overview>
+        <syntax>void mmtx33scale(tmatrix33 * out, float x, float y);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33rot</name>
+        <overview>Builds a rotation matrix.</overview>
+        <syntax>void mmtx33rot(tmatrix33 * out, float angle);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33transp</name>
+        <overview>Returns the matrix transpose of a matrix.</overview>
+        <syntax>void mmtx33tansp(tmatrix33 * out, const tmatrix33 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33transl</name>
+        <overview>Builds a matrix using the specified offsets.</overview>
+        <syntax>void mmtx33transl(tmatrix33 * out, float x, float y);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx33reflect</name>
+        <overview>Builds a matrix that reflets the coordinates system about a 2D plane.</overview>
+        <syntax>void mmtx33reflect(tmatrix33 * out, const tvetor2 * axis, cosnt tvector2 * offset);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44affine</name>
+        <overview>Builds a 3D affine transformation matrix. NULL arguments are treated as identity transformations.</overview>
+        <syntax>void mmtx44affine(tmatrix44 * out, float scale, const tvector3 * rotcenter, const tquaternion * rot, cosnt tvector3 * trans);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44mult</name>
+        <overview>Determines the product of two matrices.</overview>
+        <syntax>void mmtx44mult(tmatrix44 * out, const tmatrix44 * mtx1, const tmatrix44 * mtx2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44lerp</name>
+        <overview>Performs a linear interpolation between to matrices.</overview>
+        <syntax>void mmtx44lerp(tmatrix44 * out, const tmarix44 * mtx1, const tmatrix44 * mtx2, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44det</name>
+        <overview>Returns the determinant of a matrix.</overview>
+        <syntax>float mmtx44det(const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44trace</name>
+        <overview>Returns the trace of the 4x4 matrix (sum of the values along the diagonal).</overview>
+        <syntax>flaot mmtx44trace(const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44ident</name>
+        <overview>Creates an identity matrix.</overview>
+        <syntax>oid mmtx44ident(tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44isident</name>
+        <overview>Determines if a matrix is an identity matrix.</overview>
+        <syntax>bool mmtx44isidentity(const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44set</name>
+        <overview>Set matrix components.</overview>
+        <syntax>void mmtx44set(tmatrix44 * out, const tvector4 * row1, cosnt tvecor4 * row2, const tvector4 * row3, cosnt tvector4 * row4);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44copy</name>
+        <overview>Copy matrix.</overview>
+        <syntax>void mmtx44copy(tmatrix44 * ot, const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44inv</name>
+        <overview>Calculates the inverse of a matrix.</overview>
+        <syntax>void mmtx44inv(tmatrix44 * out, const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44invaffine</name>
+        <overview>Calcluates the inverse affine of a matrix.</overview>
+        <syntax>void mmtx44invaffine(tmatrix44 * out, const tmatrix44 * out);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44decomp</name>
+        <overview>Beaks down a general 3D transformation matrix into its scalar, rotational , and translational components.</overview>
+        <syntax>void mmtx44decomp(tvector3 * scale, tvecto3 * rot, tvector3 * tans, cosnt tmatrix44 * out);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44scale</name>
+        <overview>Builds a matrix that scales along the x-axis, the y-axis and the z-axis.</overview>
+        <syntax>void mmtx44scale(tmatrix44 * out, float x, float y, float z);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44rotx</name>
+        <overview>Builds a matrix that rotates arond the x-axis.</overview>
+        <syntax>void mmtx44rotx(tmatrix44 * out, float angle);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44roty</name>
+        <overview>Builds a matrix that rotates around the y-axis.</overview>
+        <syntax>void mmtx44roty(tmatrix44 * out, float angle);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44rotz</name>
+        <overview>Builds a matrix that rotates around the z-axis.</overview>
+        <syntax>void mmtx44rotz(tmatrix44 * out, float angle);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44transp</name>
+        <overview>Returns the matrix transpose of a matrix.</overview>
+        <syntax>void mmtx44transp(tmatrix44 * out, const tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44transl</name>
+        <overview>Builds a matrix using the specified offsets.</overview>
+        <syntax>void mmtx44transl(tmatrix44 * out, float x, float y, float z);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44reflect</name>
+        <overview>Builds a matrix that reflects the coordinate system about a plane.</overview>
+        <syntax>void mmtx44reflect(tmatrix44 * out, const tplane * plane);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44shadow</name>
+        <overview>Builds a matrix that flattens gemetry into a plane.</overview>
+        <syntax>void mmtx44shadow(tmatrix44 * ut, const tvector3 * light, const tplane * plane);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44persp</name>
+        <overview>Builds a (left-handed) perpective projection matrix based on a field of view.</overview>
+        <syntax>void mmtx44persp(tmatrix44 8 out, float w, float h, float zn, float zf);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44perspfov</name>
+        <overview>Builds a (left-handed) perspective projection matrix based on a field of view.</overview>
+        <syntax>void mmtx44perspfov(tmatrix44 * out, float fovy, float aspect, float zn, float z);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44ortho</name>
+        <overview>Builds a let-handed orthographic projection matrix.</overview>
+        <syntax>void mmtx44ortho(tmatrix44 * ou, float w, float h, foat zn, float zf);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44lookat</name>
+        <overview>Builds a left-handed, llok-at matrix.</overview>
+        <syntax>void mmtx44lookat(tmatrix44 * out, const tvector4 * eye, const tvector3 * at, const tvector3 * up);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44frustum</name>
+        <overview>Builds a let-handed perspective projecion matrix.</overview>
+        <syntax>void mmtx44frustum(tmatrix44 * out, float l, float r, flaot b, float t, float zn, float zf);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mmtx44quat</name>
+        <overview>Builds aquaternion from rotation matrix.</overview>
+        <syntax>void mmtx44quat(tquaternion * out, cosnt tmatrix44 * mtx);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatadd</name>
+        <overview>Adds two quaternions.</overview>
+        <syntax>void mquatadd(tquaternion * out, const tquaternion * q1, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatsub</name>
+        <overview>Subtracts two quaternions.</overview>
+        <syntax>void mquatsub(tquaternion * out, consttquaternion * q1, cosnt tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatdot</name>
+        <overview>Returns the dot produt of two quaternions.</overview>
+        <syntax>flaot mquatdot(const tquaternion * q1, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatset</name>
+        <overview>Set quaternion components.</overview>
+        <syntax>void mquatset(tquaternion * out, float x, float y, float z, float w);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatcopy</name>
+        <overview>Copy quaternion.</overview>
+        <syntax>void mquatcopy(tquaternion * out, cosnt tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatident</name>
+        <overview>Returns the identity quaternion.</overview>
+        <syntax>void mquatident(tquaternion * out);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatisident</name>
+        <overview>Deermines if a quaternion is an identity quaernion.</overview>
+        <syntax>void mquatisident(const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquateq</name>
+        <overview>Check whether two gien quaternions are almost equal.</overview>
+        <syntax>void mquateq(const tquaternion * q1, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatconj</name>
+        <overview>Returns the conjugate of a quaternion.</overview>
+        <syntax>void mquatconj(tquaternion * out, const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatlen</name>
+        <overview>Returns the length of a quaternion.</overview>
+        <syntax>float mquatlen(const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatlen2</name>
+        <overview>Returns the square of the length of a quaternion.</overview>
+        <syntax>float mquatlen2(cosnt tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatnorm</name>
+        <overview>Compute a unit length quaternion.</overview>
+        <syntax>void mquatnorm(tquaternion * out, const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatmult</name>
+        <overview>Multiplies two quaternions.</overview>
+        <syntax>void mquatmult(tquaternion * out, const tquaternion * q1, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatscale</name>
+        <overview>Scales quaternion by value.</overview>
+        <syntax>void mquatscale(tquaternion * out, const tquaternion * q, float scale);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatinv</name>
+        <overview>Conjugates and renorilzes a quaternion.</overview>
+        <syntax>void mquatinv(tquaternion * out, const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatbary</name>
+        <overview>Returns a quaternion in barycentric coordinates.</overview>
+        <syntax>void mquatbary(tquaternion * out, const tquaternion * q1, const tquaternion * q2, cosnt tquaternion * q3, float f, float g);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatlerp</name>
+        <overview>Performs a linear interpolation between two quaternions.</overview>
+        <syntax>void mquatlerp(tquaternion * out, const tquaternion * q1, cosnst tquaternion * q2, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatslerp</name>
+        <overview>Interpolates between two quaternions, using spherical linear interpolation.</overview>
+        <syntax>void mquatslerp(tquaernion * out, const tquaternion * q1, cosnt tquaternion * q2, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatnlerp</name>
+        <overview>Interpolates between two quaternions, using optimized spherical linear interpolation.</overview>
+        <syntax>void mquatnlerp(tquaternion * out, const tquaternion * q1, const tquaternion * q2, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatsquad</name>
+        <overview>Interpolates between quaternions, using spherical quadrangle interpolation.</overview>
+        <syntax>void mquatsquad(tquaternion * out, const tquaternion * q1, const tquaternion * a, const tquaternion * b, const tquaternion * c, float f);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatspline</name>
+        <overview>Sets up control points for spherial quadrangle interpolation.</overview>
+        <syntax>void mquatspline(tquaternion * out, const tquaternion * q1, cosnt tquaternion * m, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatln</name>
+        <overview>Calculates the natural logarithm,</overview>
+        <syntax>void mquatln(tquaternion * out, const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatexp</name>
+        <overview>Calculates the exponential.</overview>
+        <syntax>void mquatexp(tquaternion * out, const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatmtx44</name>
+        <overview>Builds a rotation matrix from a quaternion.</overview>
+        <syntax>void mquatmtx44(tmarix44 * out, cosnt tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatangle</name>
+        <overview>Returns rotation angle of a quaternion.</overview>
+        <syntax>float mquatangle(const tquaternion * q);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquataxis</name>
+        <overview>Returns axis specified by vector part o a quaternion.</overview>
+        <syntax>void mquataxis(tvector3 * out, const tquaternion * quat);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatrot</name>
+        <overview>Rotates a quaternion using another quaternion.</overview>
+        <syntax>void mquatrot(tquaernion * out, const tquaternion * q1, const tquaternion * q2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatrotvec3</name>
+        <overview>Rotates 3D vector using quaternion (v, q, v).</overview>
+        <syntax>void mquatrotvec3(tvector3 * out, const tquaternion * q, const tvector3 * v);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatrotarc</name>
+        <overview>Builds a quaternion or rotsting from vector v1 to vector v2.</overview>
+        <syntax>void mquatrotarc(tquaternion * out, const tvector3 * v1, cosnt tvector3 * v2);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatrotaxis</name>
+        <overview>Builds a quaternion rom axis and rotation angle. (q, v, angle).</overview>
+        <syntax>void mquatrotaxis(tquaternion * out, cosnt tvecor3 * v, float angle);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquatroteler</name>
+        <overview>Builds a quaternion with the given Euler angles like yaw, pitch and roll.</overview>
+        <syntax>void mquatroteuler(tquaternion * out, float yaw, float pitch, float roll);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mquateuler</name>
+        <overview>Returns a quaternion Euler angles like yaw, pitch and roll.</overview>
+        <syntax>void mquateuler(tvector3 * out, const tquaternion * quat);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplaneset</name>
+        <overview>Set plane components.</overview>
+        <syntax>void planeset(tplane * out, float x, float y, float z, float w);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplanecopy</name>
+        <overview>Copy a plane.</overview>
+        <syntax>void mplanecopy(tplane * out, const tplane * p);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplanedot</name>
+        <overview>Computes the dot product of a plane and a 4D vector.</overview>
+        <syntax>float mplanedot(const tplane * p, cosnt tvector4 * v);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplanepts</name>
+        <overview>Constructs a plane from three points.</overview>
+        <syntax>void mplanepts(tplane * out, const tvector3 * p1, const tvector3 * p2, const tvector3 * p3);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplanenorm</name>
+        <overview>Normalizes the plane coefficients so that the plane normal has unit length.</overview>
+        <syntax>void mplanenorm(tplane * out, const tplane * p);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplanescale</name>
+        <overview>Scale the plane with the given scaling factor.</overview>
+        <syntax>void mplanescale(tplane * out, const tplane * p, float scale);</syntax>
       </function>
       <function>
-        <name>func</name>
-        <overview>desc</overview>
-        <syntax>code</syntax>
+        <name>mplaneinter</name>
+        <overview>Finds the intersection between a plane and a line.</overview>
+        <syntax>bool mplaneinter(tvector3 * out, tplane * p, const tvector3 * p1, cosnt tvector3 * p2);</syntax>
       </function>
     </func-list>
+    <struct-list>
+      <structure>
+        <name>tvector2</name>
+      </structure>
+      <structure>
+        <name>tvector3</name>
+      </structure>
+      <structure>
+        <name>tvector4</name>
+      </structure>
+      <structure>
+        <name>tmatrix33</name>
+      </structure>
+      <structure>
+        <name>tmatrix44</name>
+      </structure>
+      <structure>
+        <name>tquaternion</name>
+      </structure>
+      <structure>
+        <name>tplane</name>
+      </structure>
+    </struct-list>
   </math>
 </minor-lib>
