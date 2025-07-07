@@ -7,71 +7,85 @@
         <overview>Set components of a 2D vector.</overview>
         <syntax>void mvec2set(tvector2 * out, float x, float y);</syntax>
       </function>
+
       <function>
         <name>mvec2add</name>
         <overview>Adds two 2D vectors.</overview>
         <syntax>void mvec2add(tvector2 * out, const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mvec2sub</name>
         <overview>Subtracts two 2D vectors.</overview>
         <syntax>void mvec2sub(tvector2 * out, const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mvec2ccw</name>
         <overview>Retruns the z-component by taking the cross product of two 2D vectors.</overview>
         <syntax>float mvec2ccw(const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mvec2dot</name>
         <overview>Determines the dot product of two 2D vectors.</overview>
         <syntax>float mvec2dot(const tvector2 * v1, const tector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mec2reflect</name>
         <overview>Returns reflected 2D vector to a normal.</overview>
         <syntax>void mvec2reflect(tvector2 * out, const tvector2 * vec, const tvector2 * normal);</syntax>
       </function>
+
       <function>
         <name>mvec2refract</name>
         <overview>Compute the direction of a refracted 2D vector.</overview>
         <syntax>void mvec2refract(tvector2  * out, const tvector2 * vec, const tvector2 * normal, float ratio);</syntax>
       </function>
+
       <function>
         <name>mvec2lerp</name>
         <overview>Performs a linear interpolation between two 2D vectors.</overview>
         <syntax>void mvec2lerp(tvector2 * out, const tvector2 * v1, const tvector2 * v2, float t);</syntax>
-      </function>
+    </function>
+
       <function>
         <name>mvec2len</name>
         <overview>Returns the length of a 2D vector.</overview>
         <syntax>float mbec2len(const tvector2 * len);</syntax>
       </function>
+
       <function>
         <name>mvec2len2</name>
         <overview>Returns the square of the length of a 2D vector.</overview>
         <syntax>float mbec2len(const tvector2 * len);</syntax>
       </function>
+
       <function>
         <name>mvec2dist</name>
         <overview>Returns the distance between two 2D vector.</overview>
         <syntax>float mvec2dist(const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mvec2dist2</name>
         <overview>Returns the square of the distance of a two 2D vectors.</overview>
         <syntax>float mvec2dist2(const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+
       <function>
         <name>mvec2norm</name>
         <overview>Returns the normalizaed version of a 2D vector.</overview>
         <syntax>void mvec2norm(tvetor2 * out, const tvector2 * vec);</syntax>
       </function>
+
       <function>
         <name>mvec2scale</name>
         <overview>Scales a 2D vector.</overview>
         <syntax>float mvec2dist(const tvector2 * v1, const tvector2 * v2);</syntax>
       </function>
+      
       <function>
         <name>mvec2max</name>
         <overview>Returns a 2D vector that is made up of the largest components of two 2D vectors.</overview>
